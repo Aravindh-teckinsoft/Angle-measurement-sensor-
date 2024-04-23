@@ -39,7 +39,7 @@ while True:
     ret, frame = cap.read()
 
     #fliping the camera
-    frame = cv2.flip(frame, -1) #-1 for upside down, 1 for mirror the image
+    #frame = cv2.flip(frame, -1) #-1 for upside down, 1 for mirror the image
 
     # Call the function to find the angle of the sheet metal
     angle = find_angle(frame)
