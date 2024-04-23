@@ -49,7 +49,7 @@ while True:
 
     # Display the angle value on the camera image
     if angle is not None:
-       cv2.putText(frame, f'Angle: {angle:.2f} degrees', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 240, 0), 2)
+       cv2.putText(frame, f'Angle: {angle:.2f} degrees', (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.60, (0, 240, 0), 1)
 
     # Display the frame
     cv2.imshow('Angle measurement Camera', frame)
@@ -57,7 +57,7 @@ while True:
     # Press 'esc' to quit the program
     if cv2.waitKey(1) & 0xFF == 27:
         # Display 'closing the window' text on the camera image
-        cv2.putText(frame, 'Closing the window...', (150, 240), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
+        cv2.putText(frame, 'Closing the window...', (70, 80), cv2.FONT_HERSHEY_COMPLEX, 0.60, (0, 0, 255), 1)
         cv2.imshow('Angle measurement Camera', frame)
         cv2.waitKey(2000)  # Delay for 2 seconds
         break
