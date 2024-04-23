@@ -57,7 +57,7 @@ while True:
     # Press 'esc' to quit the program
     if cv2.waitKey(1) & 0xFF == 27:
         # Display 'closing the window' text on the camera image
-        cv2.putText(frame, 'Closing the window...', (70, 100), cv2.FONT_HERSHEY_COMPLEX, 0.60, (0, 0, 255), 1)
+        cv2.putText(frame, 'Closing the window...', (70, 130), cv2.FONT_HERSHEY_COMPLEX, 0.60, (0, 0, 255), 1)
         cv2.imshow('Angle measurement Camera', frame)
         cv2.waitKey(2000)  # Delay for 2 seconds
         break
