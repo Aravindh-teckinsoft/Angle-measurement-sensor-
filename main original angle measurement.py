@@ -11,7 +11,7 @@ def find_angle(image):
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 
     # Apply Canny edge detection
-    edges = cv2.Canny(blurred, 50, 150, 3)
+    edges = cv2.Canny(blurred, 50, 150)
 
     # Detect lines using Hough Line Transform
     lines = cv2.HoughLinesP(edges, 1, np.pi / 180, 100, minLineLength=100, maxLineGap=10)
