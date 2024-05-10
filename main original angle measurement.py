@@ -46,7 +46,7 @@ while True:
     ret, frame = cap.read() 
     
     # Resize the frame
-    # frame = cv2.resize(frame, (720, 480))
+    frame = cv2.resize(frame, (720, 480))
 
     #fliping the camera
     frame = cv2.flip(frame, -1) #-1 for upside down, 1 for mirror the image
