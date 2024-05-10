@@ -42,7 +42,6 @@ print("fps:", fps)
 
 while True:
     
-    
     ret, frame = cap.read() 
     
     # Resize the frame
