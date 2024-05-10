@@ -41,8 +41,6 @@ while True:
     print("fps:", fps)
     #Read frame from the camera
     ret, frame = cap.read() 
-    Read frame from the camera
-    ret, frame = cap.read()
     
     # Resize the frame
     frame = cv2.resize(frame, (720, 480))
