@@ -35,7 +35,13 @@ def find_angle(image):
 cap = cv2.VideoCapture(0)
 
 while True:
-    # Read frame from the camera
+    
+    cap.set(cv2.CAP_PROP_FPS, 30)
+    fps = int(cap.get(5))
+    print("fps:", fps)
+    #Read frame from the camera
+    ret, frame = cap.read() 
+    Read frame from the camera
     ret, frame = cap.read()
     
     # Resize the frame
