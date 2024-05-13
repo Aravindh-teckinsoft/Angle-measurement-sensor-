@@ -14,7 +14,7 @@ def detect_and_measure_angle(image):
     edges = cv2.Canny(blurred, 50, 150)
 
     # Apply erosion to the edges
-    kernel = np.ones((1, 1), np.uint8)
+    kernel = np.ones((2, 2), np.uint8)
     edges = cv2.erode(edges, kernel, iterations=5)
 
     # Detect lines using Hough Line Transform
