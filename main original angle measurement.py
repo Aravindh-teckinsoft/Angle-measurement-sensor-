@@ -56,6 +56,7 @@ while True:
     # Display the angle value on the camera image
     if angle is not None:
        cv2.putText(frame, f'Angle: {angle:.2f} degrees', (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.60, (0, 240, 0), 1)
+       print(f'Angle: {angle:.2f} degrees')
 
     # Display the frame
     cv2.imshow('Angle measurement Camera', frame)
